@@ -11,8 +11,8 @@
 
 ## 📦 Tech Stack
 
-- Frontend: _Your choice (e.g., Next.js, React)_
-- Backend: _Node.js, Express, or any preferred stack_
+- Frontend: _NextJS_
+- Backend: _Node.js, Express_
 - Realtime: _Socket.IO / WebSockets_
 - Music APIs: _YouTube API, Spotify API_
 
