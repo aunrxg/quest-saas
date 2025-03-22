@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { SignedOut, SignInButton, SignUpButton } from "@clerk/nextjs";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -37,10 +38,14 @@ export default function Navbar() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Link href="#" className="text-sm font-medium hover:text-primary">
+          {/* <Link href="#" className="text-sm font-medium hover:text-primary">
             Log in
-          </Link>
-          <Button className="bg-violet-600 hover:bg-violet-700 cursor-pointer">Sign up</Button>
+          </Link> */}
+          <SignedOut>
+            <SignInButton />
+            <SignUpButton />
+          </SignedOut>
+          {/* <Button className="bg-violet-600 hover:bg-violet-700 cursor-pointer">Sign up</Button> */}
         </div>
 
         {/* Mobile Menu Button */}
