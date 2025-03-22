@@ -53,7 +53,7 @@ export default function PricingCard({
       </CardContent>
       <CardFooter>
         <Button
-          className={`w-full ${popular ? "bg-violet-600 hover:bg-violet-700" : ""} ${comingSoon ? "bg-gray-400 hover:bg-gray-500 cursor-not-allowed" : ""}`}
+          className={`w-full ${popular ? "bg-violet-600 hover:bg-violet-700" : ""} ${comingSoon ? "bg-gray-400 hover:bg-gray-500 cursor-not-allowed" : ""} cursor-pointer`}
           variant={popular ? "default" : comingSoon ? "default" : "outline"}
           disabled={comingSoon}
         >

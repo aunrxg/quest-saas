@@ -6,7 +6,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="overflow-x-hidden">
       {/* Hero Section */}
       <section className="relative flex justify-center items-center py-20 md:py-32 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-violet-500/10 to-violet-700/5 -z-10" />
@@ -23,13 +23,13 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
-                <Button size="lg" className="font-medium bg-violet-600 hover:bg-violet-700">
+                <Button size="lg" className="font-medium bg-violet-600 hover:bg-violet-700 cursor-pointer">
                   Create Your Room
                 </Button>
                 <Button
                   size="lg"
                   variant="outline"
-                  className="font-medium border-violet-600 text-violet-600 hover:bg-violet-50"
+                  className="font-medium border-violet-600 text-violet-600 hover:bg-violet-50 cursor-pointer"
                 >
                   How It Works
                 </Button>
@@ -206,7 +206,7 @@ export default function Home() {
 
 
       {/* Pricing Section */}
-      <section className="py-16 md:py-24 flex justify-center items-center bg-gray-50 dark:bg-gray-900">
+      <section className="py-16 md:py-24 flex justify-center items-center bg-gray-50 dark:bg-gray-900 w-full">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
             <div className="space-y-2">
@@ -279,13 +279,13 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="font-medium bg-violet-600 hover:bg-violet-700">
+              <Button size="lg" className="font-medium bg-violet-600 hover:bg-violet-700 cursor-pointer">
                 Create Your First Room
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="font-medium border-violet-600 text-violet-600 hover:bg-violet-50"
+                className="font-medium border-violet-600 text-violet-600 hover:bg-violet-50 curosr-pointer"
               >
                 See a Demo
               </Button>

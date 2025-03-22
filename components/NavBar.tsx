@@ -40,7 +40,7 @@ export default function Navbar() {
           <Link href="#" className="text-sm font-medium hover:text-primary">
             Log in
           </Link>
-          <Button className="bg-violet-600 hover:bg-violet-700">Sign up</Button>
+          <Button className="bg-violet-600 hover:bg-violet-700 cursor-pointer">Sign up</Button>
         </div>
 
         {/* Mobile Menu Button */}
