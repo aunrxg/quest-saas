@@ -1,6 +1,4 @@
-import FeatureCard from "@/components/FeatureCard";
-import PricingCard from "@/components/PricingCard";
-import TestimonialCard from "@/components/TestimonialCard";
+import { FeatureCard, PricingCard, TestimonialCard } from "@/components/index";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, Headphones, ListMusic, Music, Radio, Users } from "lucide-react";
 import Image from "next/image";
